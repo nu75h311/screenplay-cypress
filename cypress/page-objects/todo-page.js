@@ -8,6 +8,12 @@ export function addTodo(todoText) {
     cy.get('.new-todo').type(todoText + '{enter}')
 }
 
+export function addTodos() {
+    Array.from(arguments).forEach(todoItem => {
+        addTodo(todoItem)
+    });
+}
+
 export function toggleTodo(todoIndex) {
     cy.get(`.todo-list li:nth-child(${todoIndex + 1}) .toggle`).click()
 }
@@ -40,6 +46,12 @@ export function validateTodoCompletedState(todoIndex, shouldBeCompleted) {
 
 export function validateTodoText(todoIndex, expectedText) {
     cy.get(`.todo-list li:nth-child(${todoIndex + 1}) label`).should('have.text', expectedText)
+}
+
+export function validateListOfTodosContain() {
+    Array.from(arguments).forEach(expectedTodo => {
+        cy.get('.todo-list li').should('contain', expectedTodo)
+    });
 }
 
 export function validateToggleState(todoIndex, shouldBeToggled) {

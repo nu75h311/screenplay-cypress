@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 import { TODO_LIST } from '../pages/TodoMvcPage'
 
 export function sizeIs(expectedNumberOfTodos) {
