@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
+import { TODO_FIELD } from '../pages/TodoMvcPage'
 
 export function called(todoText) {
-    cy.get('.new-todo').type(todoText + '{enter}')
+    cy.get(TODO_FIELD).type(todoText + '{enter}')
 }
