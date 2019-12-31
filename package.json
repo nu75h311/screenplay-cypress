@@ -1,0 +1,27 @@
+{
+  "name": "screenplay-cypress",
+  "version": "1.0.0",
+  "description": "Demo showing differences between Page Objects and Screenplay patterns using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nu75h311/screenplay-cypress.git"
+  },
+  "keywords": [
+    "screenplay",
+    "cypress"
+  ],
+  "author": "Adriano Tanoue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nu75h311/screenplay-cypress/issues"
+  },
+  "homepage": "https://github.com/nu75h311/screenplay-cypress#readme",
+  "devDependencies": {
+    "cypress": "^3.8.1"
+  }
+}
