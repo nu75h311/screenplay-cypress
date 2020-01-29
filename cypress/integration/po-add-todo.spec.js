@@ -16,6 +16,8 @@ describe('Page Objects - Add todo tests', () => {
         todoPage.addTodos('Feed the cat', 'Take out the garbage')
         todoPage.addTodo('Walk the dog')
         todoPage.validateNumberOfTodosShown(3)
-        todoPage.validateListOfTodosContain('Feed the cat', 'Take out the garbage', 'Walk the dog')
+        todoPage.validateListOfTodosContain('Feed the cat',
+            'Take out the garbage',
+            'Walk the dog')
     })
 })

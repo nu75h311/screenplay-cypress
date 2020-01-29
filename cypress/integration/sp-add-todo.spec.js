@@ -17,6 +17,8 @@ describe('Screenplay - Add todo tests', () => {
         Start.withAListContaining('Feed the cat', 'Take out the garbage')
         AddATodoItem.called('Walk the dog')
         TheTodoList.sizeIs(3)
-        TheTodoList.contentsHave('Feed the cat', 'Take out the garbage', 'Walk the dog')
+        TheTodoList.contentsHave('Feed the cat',
+            'Take out the garbage',
+            'Walk the dog')
     })
 })
