@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/nu75h311/screenplay-cypress#readme",
   "devDependencies": {
-    "cypress": "^3.8.1"
+    "cypress": "^4.7.0"
   }
 }
